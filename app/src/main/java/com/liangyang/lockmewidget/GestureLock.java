@@ -246,12 +246,6 @@ public class GestureLock extends View {
         errorPaint.setStrokeWidth(4);
 
         //6.初始化3个变量(bitmap)
-//        bitmapPointNormal = BitmapFactory.decodeResource(getResources(), R.drawable.normal_point);
-//        bitmapPointPress = BitmapFactory.decodeResource(getResources(), R.drawable.press_point);
-//        bitmapPointError = BitmapFactory.decodeResource(getResources(), R.drawable.error_point);
-//        bitmapPointNormal = BitmapFactory.decodeResource(getResources(), R.drawable.gesture_pattern_item_bg);
-//        bitmapPointPress = BitmapFactory.decodeResource(getResources(), R.drawable.gesture_pattern_selected);
-//        bitmapPointError = BitmapFactory.decodeResource(getResources(), R.drawable.gesture_pattern_selected_wrong);
         bitmapPointNormal = BitmapFactory.decodeResource(getResources(), R.drawable.normal_state);
         bitmapPointPress = BitmapFactory.decodeResource(getResources(), R.drawable.press_state);
         bitmapPointError = BitmapFactory.decodeResource(getResources(), R.drawable.error_state);
