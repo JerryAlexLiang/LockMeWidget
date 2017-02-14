@@ -1,7 +1,5 @@
 package com.liangyang.lockmewidget;
 
-import android.util.Log;
-
 /**
  * 创建日期：2017/2/13 on 11:13
  * 作者:杨亮 liangyang
@@ -38,7 +36,6 @@ public class Point {
      * @return
      */
     public float distance(Point a) {
-        Log.d("Lock",a.x + "/" + a.y + "/" +x + "/" + y);
         float distance = (float) (Math.sqrt((x - a.x) * (x - a.x) + (y - a.y) * (y - a.y)));
         return distance;
     }

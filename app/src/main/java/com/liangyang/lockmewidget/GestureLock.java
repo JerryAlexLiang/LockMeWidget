@@ -7,7 +7,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -29,7 +28,10 @@ public class GestureLock extends View {
     private ArrayList<Point> pointList = new ArrayList<>();
     private ArrayList<Integer> passList = new ArrayList<>();//存序号(0-8)
 
-    //6.创建3个变量(bitmap),在init()方法中对这三个变量进行初始化
+    //6.创建6个变量(bitmap),在init()方法中对这三个变量进行初始化
+    private Bitmap outerCircle;
+    private Bitmap innerCircle = null;
+    private Bitmap mBitmap;
     private Bitmap bitmapPointError;
     private Bitmap bitmapPointPress;
     private Bitmap bitmapPointNormal;
@@ -225,16 +227,27 @@ public class GestureLock extends View {
 
                 if (points[i][j].state == Point.STATE_NORMAL) {
                     //normal
-                    canvas.drawBitmap(bitmapPointNormal, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);
-
+                    outerCircle = bitmapPointNormal;
+                    innerCircle = null;
+                    //canvas.drawBitmap(bitmapPointNormal, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);
 
                 } else if (points[i][j].state == Point.STATE_PRESS) {
                     //press
-                    canvas.drawBitmap(bitmapPointPress, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);
+                    outerCircle = bitmapPointNormal;
+                    innerCircle = bitmapPointPress;
+                    //canvas.drawBitmap(bitmapPointPress, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);
 
                 } else if (points[i][j].state == Point.STATE_ERROR) {
                     //error
-                    canvas.drawBitmap(bitmapPointError, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);
+                    outerCircle = bitmapPointNormal;
+                    innerCircle = bitmapPointError;
+                    //canvas.drawBitmap(bitmapPointError, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);
+                }
+
+                //画圆点
+                canvas.drawBitmap(outerCircle, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);
+                if (innerCircle != null) {
+                    canvas.drawBitmap(innerCircle, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);
                 }
 
             }
@@ -250,14 +263,18 @@ public class GestureLock extends View {
 
         //10.绘制连线---画笔初始化
         pressPaint.setColor(Color.YELLOW);
-        pressPaint.setStrokeWidth(4);
+        pressPaint.setStrokeWidth(12);
         errorPaint.setColor(Color.RED);
-        errorPaint.setStrokeWidth(4);
+        errorPaint.setStrokeWidth(12);
+
 
         //6.初始化3个变量(bitmap)
-        bitmapPointNormal = BitmapFactory.decodeResource(getResources(), R.drawable.normal_state);
-        bitmapPointPress = BitmapFactory.decodeResource(getResources(), R.drawable.press_state);
-        bitmapPointError = BitmapFactory.decodeResource(getResources(), R.drawable.error_state);
+//        bitmapPointNormal = BitmapFactory.decodeResource(getResources(), R.drawable.normal_state);
+//        bitmapPointPress = BitmapFactory.decodeResource(getResources(), R.drawable.press_state);
+//        bitmapPointError = BitmapFactory.decodeResource(getResources(), R.drawable.error_state);
+        bitmapPointNormal = BitmapFactory.decodeResource(getResources(), R.drawable.gesture_pattern_item_bg);
+        bitmapPointPress = BitmapFactory.decodeResource(getResources(), R.drawable.gesture_pattern_selected);
+        bitmapPointError = BitmapFactory.decodeResource(getResources(), R.drawable.gesture_pattern_selected_wrong);
 
 
         //初始化圆点的半径
@@ -297,14 +314,14 @@ public class GestureLock extends View {
     }
 
     /**
-     * 对外实现的接口
+     * 12.对外实现的接口
      */
     public interface OnDrawFinishedListener {
         boolean OnDrawFinished(List<Integer> passList);
     }
 
     /**
-     * 暴露接口，在外赋值
+     * 13.暴露接口，在外赋值
      *
      * @param listener
      */

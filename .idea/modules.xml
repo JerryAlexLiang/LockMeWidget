@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LockMeWidget.iml" filepath="$PROJECT_DIR$/LockMeWidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QQLockPattern/QQLockPattern.iml" filepath="$PROJECT_DIR$/QQLockPattern/QQLockPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
