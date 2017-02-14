@@ -7,6 +7,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -106,7 +107,7 @@ public class GestureLock extends View {
 
             case MotionEvent.ACTION_UP:
                 boolean valid = false;//
-                if (listener != null && isDraw){
+                if (listener != null && isDraw) {
                     valid = listener.OnDrawFinished(passList);
                 }
                 if (!valid) {
@@ -133,6 +134,13 @@ public class GestureLock extends View {
         Point pointMouse = new Point(mouseX, mouseY);
         for (int i = 0; i < points.length; i++) {
             for (int j = 0; j < points[i].length; j++) {
+//                if (points[i][j].distance(points[i][j],pointMouse) < bitmapR) {
+//                    //当前的手指点在点上了
+//                    int[] result = new int[2];
+//                    result[0] = i;
+//                    result[1] = j;
+//                    return result;
+//                }
                 if (points[i][j].distance(pointMouse) < bitmapR) {
                     //当前的手指点在点上了
                     int[] result = new int[2];
@@ -219,6 +227,7 @@ public class GestureLock extends View {
                     //normal
                     canvas.drawBitmap(bitmapPointNormal, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);
 
+
                 } else if (points[i][j].state == Point.STATE_PRESS) {
                     //press
                     canvas.drawBitmap(bitmapPointPress, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);
@@ -296,6 +305,7 @@ public class GestureLock extends View {
 
     /**
      * 暴露接口，在外赋值
+     *
      * @param listener
      */
     public void setOnDrawFinishedListener(OnDrawFinishedListener listener) {
