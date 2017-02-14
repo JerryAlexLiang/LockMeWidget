@@ -31,7 +31,6 @@ public class GestureLock extends View {
     //6.创建6个变量(bitmap),在init()方法中对这三个变量进行初始化
     private Bitmap outerCircle;
     private Bitmap innerCircle = null;
-    private Bitmap mBitmap;
     private Bitmap bitmapPointError;
     private Bitmap bitmapPointPress;
     private Bitmap bitmapPointNormal;
@@ -46,8 +45,10 @@ public class GestureLock extends View {
     Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);//抗锯齿
 
     //绘制带颜色的画笔
-    Paint pressPaint = new Paint();//按下时的画笔
-    Paint errorPaint = new Paint();//错误时的画笔
+    Paint pressPaint = new Paint(Paint.ANTI_ALIAS_FLAG);//按下时的画笔
+    Paint errorPaint = new Paint(Paint.ANTI_ALIAS_FLAG);//错误时的画笔
+
+    private final int mStrokeAlpha = 128; //设置透明度
 
     public GestureLock(Context context) {
         super(context);
@@ -262,10 +263,23 @@ public class GestureLock extends View {
     private void init() {
 
         //10.绘制连线---画笔初始化
+        pressPaint.setAntiAlias(true);
+        pressPaint.setDither(true);
+        pressPaint.setAlpha(mStrokeAlpha);
+        pressPaint.setStyle(Paint.Style.STROKE);
         pressPaint.setColor(Color.YELLOW);
         pressPaint.setStrokeWidth(12);
+        pressPaint.setStrokeJoin(Paint.Join.ROUND);
+        pressPaint.setStrokeCap(Paint.Cap.ROUND);
+
+        errorPaint.setAntiAlias(true);
+        errorPaint.setDither(true);
+        errorPaint.setAlpha(mStrokeAlpha);
+        errorPaint.setStyle(Paint.Style.STROKE);
         errorPaint.setColor(Color.RED);
         errorPaint.setStrokeWidth(12);
+        errorPaint.setStrokeJoin(Paint.Join.ROUND);
+        errorPaint.setStrokeCap(Paint.Cap.ROUND);
 
 
         //6.初始化3个变量(bitmap)
