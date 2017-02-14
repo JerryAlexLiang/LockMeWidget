@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\anim\\shake_x.xml",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\anim\\shake_x.xml"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\anim\\shake.xml",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\anim\\shake.xml"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\anim\\shake_y.xml",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\anim\\shake_y.xml"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\anim\\interpolator_cycle.xml",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\anim\\interpolator_cycle.xml"
+    }
+]

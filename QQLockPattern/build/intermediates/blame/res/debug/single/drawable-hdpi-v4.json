@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\login_default_avatar.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-hdpi\\login_default_avatar.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\application_bg_welcome.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-hdpi\\application_bg_welcome.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\card_avatar.9.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-hdpi\\card_avatar.9.png"
+    }
+]

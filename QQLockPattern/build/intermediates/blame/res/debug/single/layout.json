@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\layout\\gesturepassword_guide.xml",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\layout\\gesturepassword_guide.xml"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\layout\\gesturepassword_unlock.xml",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\layout\\gesturepassword_unlock.xml"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\layout\\gesturepassword_create.xml",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\layout\\gesturepassword_create.xml"
+    }
+]

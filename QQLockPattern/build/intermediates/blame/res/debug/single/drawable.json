@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable\\common_btn_green.xml",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable\\common_btn_green.xml"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable\\welcome_bg.xml",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable\\welcome_bg.xml"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable\\skin_color_button.xml",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable\\skin_color_button.xml"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable\\scrollbar_handle_vertical.9.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable\\scrollbar_handle_vertical.9.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable\\common_btn_red.xml",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable\\common_btn_red.xml"
+    }
+]

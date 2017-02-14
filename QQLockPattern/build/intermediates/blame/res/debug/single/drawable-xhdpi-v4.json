@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\skin_common_btn_red_disabled.9.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-xhdpi\\skin_common_btn_red_disabled.9.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\skin_common_btn_green_normal.9.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-xhdpi\\skin_common_btn_green_normal.9.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gesture_guide_pic.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-xhdpi\\gesture_guide_pic.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\skin_common_btn_red_pressed.9.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-xhdpi\\skin_common_btn_red_pressed.9.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\skin_common_btn_green_pressed.9.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-xhdpi\\skin_common_btn_green_pressed.9.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gesture_create_grid_bg.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-xhdpi\\gesture_create_grid_bg.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gesture_create_grid_selected.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-xhdpi\\gesture_create_grid_selected.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\skin_common_btn_green_disable.9.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-xhdpi\\skin_common_btn_green_disable.9.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\skin_common_btn_red_unpressed.9.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-xhdpi\\skin_common_btn_red_unpressed.9.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gesture_pattern_selected.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-xhdpi\\gesture_pattern_selected.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gesture_pattern_item_bg.9.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-xhdpi\\gesture_pattern_item_bg.9.png"
+    },
+    {
+        "merged": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gesture_pattern_selected_wrong.png",
+        "source": "D:\\WorkCode\\WorkSpace\\Test\\LockMeWidget\\QQLockPattern\\src\\main\\res\\drawable-xhdpi\\gesture_pattern_selected_wrong.png"
+    }
+]
