@@ -35,7 +35,7 @@ public class UnlockActivity extends AppCompatActivity {
                 }
                 //判断当前的密码和读取的密码是否一致
                 Log.i("androidxxx", "解锁：" + "  " + stringBuilder.toString());
-                if (stringBuilder.equals(password)){
+                if (stringBuilder.toString().equals(password)){
                     Toast.makeText(UnlockActivity.this, "密码正确", Toast.LENGTH_SHORT).show();
                     return true;
                 }else {

@@ -109,7 +109,7 @@ public class GestureLock extends View {
                 break;
 
             case MotionEvent.ACTION_UP:
-                boolean valid = false;//
+                boolean valid = false;
                 if (listener != null && isDraw) {
                     valid = listener.OnDrawFinished(passList);
                 }

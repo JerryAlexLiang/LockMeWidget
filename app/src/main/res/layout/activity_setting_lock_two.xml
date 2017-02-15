@@ -14,7 +14,7 @@
         android:layout_marginTop="30dp"/>
 
     <com.liangyang.lockmewidget.GestureLockTwoView
-        android:id="@+id/lockView"
+        android:id="@+id/lockView_two"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
@@ -27,7 +27,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/reset_lock"
+            android:id="@+id/reset_lock_two"
             style="@style/ButtonRed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
             android:layout_marginRight="10dp"/>
 
         <Button
-            android:id="@+id/save_lock"
+            android:id="@+id/save_lock_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
