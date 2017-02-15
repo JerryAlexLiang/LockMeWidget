@@ -15,6 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SettingLockActivity" />
+        <activity android:name=".UnlockActivity" />
+        <activity android:name=".SettingLockTwoActivity"></activity>
     </application>
 
 </manifest>

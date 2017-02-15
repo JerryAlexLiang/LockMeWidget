@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LockMeWidget</string>
+    <string name="guide_title">你可以创建一个解锁图案，这样他人在借用你的手机时，将无法打开应用</string>
 </resources>

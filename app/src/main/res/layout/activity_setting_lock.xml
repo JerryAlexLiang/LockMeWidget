@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff303237"
+    tools:context="com.liangyang.lockmewidget.SettingLockActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_default_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <com.liangyang.lockmewidget.GestureLock
+        android:id="@+id/lockView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reset_lock"
+            style="@style/ButtonRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="重置密码"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/save_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="保存密码"
+            style="@style/ButtonGreen"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

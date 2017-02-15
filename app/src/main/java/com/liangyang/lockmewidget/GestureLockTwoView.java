@@ -14,11 +14,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 创建日期：2017/2/13 on 11:01
- * 作者:杨亮 liangyang
- * 描述:自定义view，图案解锁-九宫格点的绘制和创建
+ * 自定义view，图案解锁-九宫格点的绘制和创建-模式2
  */
-public class GestureLock extends View {
+public class GestureLockTwoView extends View {
 
     //3.创建3*3数组保存点
     private Point[][] points = new Point[3][3];
@@ -28,12 +26,14 @@ public class GestureLock extends View {
     private ArrayList<Point> pointList = new ArrayList<>();
     private ArrayList<Integer> passList = new ArrayList<>();//存序号(0-8)
 
-    //6.创建6个变量(bitmap),在init()方法中对这三个变量进行初始化
+    //6.创建变量(bitmap),在init()方法中对这三个变量进行初始化
     private Bitmap outerCircle;
     private Bitmap innerCircle = null;
-    private Bitmap bitmapPointError;
-    private Bitmap bitmapPointPress;
     private Bitmap bitmapPointNormal;
+    private Bitmap bitmapPointPress;
+    private Bitmap bitmapCircleNormal;
+    private Bitmap bitmapCirclePress;
+    private Bitmap bitmapCircleError;
 
     private float bitmapR;//点的半径
 
@@ -50,18 +50,17 @@ public class GestureLock extends View {
 
     private final int mStrokeAlpha = 128; //设置透明度
 
-    public GestureLock(Context context) {
+    public GestureLockTwoView(Context context) {
         super(context);
     }
 
-    public GestureLock(Context context, AttributeSet attrs) {
+    public GestureLockTwoView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public GestureLock(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
+    public GestureLockTwoView(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
     }
-
 
     /**
      * 8.处理onTouch触摸事件
@@ -228,20 +227,20 @@ public class GestureLock extends View {
 
                 if (points[i][j].state == Point.STATE_NORMAL) {
                     //normal
-                    outerCircle = bitmapPointNormal;
-                    innerCircle = null;
+                    outerCircle = bitmapCircleNormal;
+                    innerCircle = bitmapPointNormal;
                     //canvas.drawBitmap(bitmapPointNormal, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);
 
                 } else if (points[i][j].state == Point.STATE_PRESS) {
                     //press
-                    outerCircle = bitmapPointNormal;
+                    outerCircle = bitmapCirclePress;
                     innerCircle = bitmapPointPress;
                     //canvas.drawBitmap(bitmapPointPress, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);
 
                 } else if (points[i][j].state == Point.STATE_ERROR) {
                     //error
-                    outerCircle = bitmapPointNormal;
-                    innerCircle = bitmapPointError;
+                    outerCircle = bitmapCircleError;
+                    innerCircle = bitmapPointNormal;
                     //canvas.drawBitmap(bitmapPointError, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);
                 }
 
@@ -267,8 +266,8 @@ public class GestureLock extends View {
         pressPaint.setDither(true);
         pressPaint.setAlpha(mStrokeAlpha);
         pressPaint.setStyle(Paint.Style.STROKE);
-        pressPaint.setColor(Color.YELLOW);
-        pressPaint.setStrokeWidth(12);
+        pressPaint.setColor(Color.WHITE);
+//        pressPaint.setStrokeWidth(12);
         pressPaint.setStrokeJoin(Paint.Join.ROUND);
         pressPaint.setStrokeCap(Paint.Cap.ROUND);
 
@@ -276,17 +275,18 @@ public class GestureLock extends View {
         errorPaint.setDither(true);
         errorPaint.setAlpha(mStrokeAlpha);
         errorPaint.setStyle(Paint.Style.STROKE);
-        errorPaint.setColor(Color.RED);
-        errorPaint.setStrokeWidth(12);
+        errorPaint.setColor(Color.WHITE);
+//        errorPaint.setStrokeWidth(12);
         errorPaint.setStrokeJoin(Paint.Join.ROUND);
         errorPaint.setStrokeCap(Paint.Cap.ROUND);
 
 
-        //6.初始化3个变量(bitmap)
-        bitmapPointNormal = BitmapFactory.decodeResource(getResources(), R.drawable.gesture_pattern_item_bg);
-        bitmapPointPress = BitmapFactory.decodeResource(getResources(), R.drawable.gesture_pattern_selected);
-        bitmapPointError = BitmapFactory.decodeResource(getResources(), R.drawable.gesture_pattern_selected_wrong);
-
+        //6.初始化圆圈和点变量(bitmap)
+        bitmapPointNormal = BitmapFactory.decodeResource(getResources(), R.drawable.btn_code_lock_default_holo);
+        bitmapPointPress = BitmapFactory.decodeResource(getResources(),R.drawable.btn_code_lock_touched_holo);
+        bitmapCircleNormal = BitmapFactory.decodeResource(getResources(),R.drawable.indicator_code_lock_point_area_default_holo);
+        bitmapCirclePress = BitmapFactory.decodeResource(getResources(),R.drawable.indicator_code_lock_point_area_green_holo);
+        bitmapCircleError = BitmapFactory.decodeResource(getResources(),R.drawable.indicator_code_lock_point_area_red_holo);
 
         //初始化圆点的半径
         bitmapR = bitmapPointNormal.getWidth() / 2;
@@ -339,4 +339,11 @@ public class GestureLock extends View {
     public void setOnDrawFinishedListener(OnDrawFinishedListener listener) {
         this.listener = listener;
     }
+
+
+
+
+
+
+
 }
